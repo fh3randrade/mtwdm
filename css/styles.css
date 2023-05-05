@@ -10841,3 +10841,22 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+.gallery-container {
+  display: flex; /* convierte al contenedor en un contenedor flexible */
+  flex-wrap: wrap; /* permite que los elementos fluyan en varias líneas cuando no hay suficiente espacio en una sola línea */
+  justify-content: center; /* centra los elementos horizontalmente */
+  align-items: center; /* centra los elementos verticalmente */
+}
+
+.gallery-item {
+  flex: 1 1 300px; /* indica la proporción del ancho que cada elemento debe ocupar */
+  margin: 10px; /* espacio entre los elementos */
+  overflow: hidden; /* recorta las imágenes que sobrepasen el contenedor */
+}
+
+.gallery-item img {
+  display: block; /* asegura que la imagen se ajuste al tamaño del contenedor */
+  width: 100%;
+  height: auto;
+}
